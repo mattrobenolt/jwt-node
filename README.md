@@ -11,6 +11,10 @@
          token = new jwt.WebToken(JSON.stringify(payload), JSON.stringify({typ:'JWT', alg:'HS256'}));
       console.log(token.serialize('hmackey'));
 
+## Installation
+  
+     $ npm install jwt
+
 ## Known Issues
   
   * _none_
