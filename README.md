@@ -6,7 +6,7 @@
          payload = {
              scope: 'client:outgoing?clientName=matt',
              iss: 'APP_SID',
-             expires: Math.round((new Date()/1000)) + 3600
+             expires: Math.round((new Date().getTime()/1000)) + 3600
          },
          token = new jwt.WebToken(JSON.stringify(payload), JSON.stringify({typ:'JWT', alg:'HS256'}));
       console.log(token.serialize('hmackey'));
