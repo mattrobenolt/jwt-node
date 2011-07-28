@@ -9,7 +9,7 @@
              expires: Math.round((new Date()/1000)) + 3600
          },
          token = new jwt.WebToken(JSON.stringify(payload), JSON.stringify({typ:'JWT', alg:'HS256'}));
-      console.log(token.generate());
+      console.log(token.serialize('hmackey'));
 
 ## Known Issues
   
