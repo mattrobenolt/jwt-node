@@ -15,6 +15,6 @@
     "node": "*"
   },
   "dependencies": {
-    "node-base64": "1.0.0"
+    "node-base64": "0.0.1"
   }
 }
